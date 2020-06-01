@@ -54,7 +54,6 @@ namespace Rozproszone.Services
 
         public IEnumerable<User> GetAll()
         {
-            // zwraca użytkowników z wyczyszczonym hasłem (Aby było czytelniej można przygotować DTO)
             return _context.Users.ToList().Select(x => {
                 return x;
             });
